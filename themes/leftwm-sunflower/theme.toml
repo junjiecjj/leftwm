@@ -1,0 +1,14 @@
+border_width = 4
+margin = [10, 10]
+default_border_color = "#df6d26"
+floating_border_color = "#df6d26"
+focused_border_color = "#fba914"
+
+[global]
+name = "sunflower"
+description = "A yellow/brown theme inspired by sunflowers"
+dependencies = ["polybar", "picom"]
+repository = "https://github.com/mautamu/leftwm-sunflower"
+version = "0.1.0"
+leftwm_versions = ">0.2.7"
+ 

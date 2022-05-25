@@ -1,0 +1,15 @@
+{% for tag in workspace.tags %}
+{% if tag.mine%}
+%{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+%{F#322413}%{B#fbd405} {{tag.name}} %{B-}%{F-}
+%{A}
+{% elsif tag.visible  %}
+%{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+%{F#322413}%{B#fba914} {{tag.name}} %{B-}%{F-}
+%{A}
+{% else tag.focused %}
+%{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
+%{F#322413}%{B#fba914} {{tag.name}} %{F-}
+%{A}
+{% endif %}
+{% endfor %}
