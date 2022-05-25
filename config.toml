@@ -1,20 +1,24 @@
+
+
+
+
 modkey = "Mod4"
 mousekey = "Mod4"
-# workspaces = []
+workspaces = []
 
-[[workspaces]]
-y = 0
-x = 1720
-height = 1440
-width = 1720
-id = 1
+# [[workspaces]]
+# y = 0
+# x = 1720
+# height = 1440
+# width = 1720
+# id = 1
 
-[[workspaces]]
-y = 0
-x = 0
-height = 1440
-width = 1720
-id = 0
+# [[workspaces]]
+# y = 0
+# x = 0
+# height = 1440
+# width = 1720
+# id = 0
 
 
 tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:Music", "8:Graphics", "9:System"]
@@ -41,6 +45,11 @@ value = "rofi  -show  combi"
 modifier = ["modkey"]
 key = "r"
 
+[[keybind]]
+command = "Execute"
+value = "xterm"
+modifier = ["modkey"]
+key = "x"
 
 
 [[keybind]]
