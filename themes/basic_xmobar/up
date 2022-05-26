@@ -61,7 +61,7 @@ exec --no-startup-id xrandr --output eDP-1 --primary
 
 # System tray
 if [ -z "$(pgrep trayer)" ] ; then
-    trayer --edge bottom --align right --widthtype percent --width 10 --heighttype pixel --height 23  --SetPartialStrut true --transparent true --alpha 60 --tint 0x777777 --expand true
+    trayer --edge bottom --align right --widthtype percent --width 15 --heighttype pixel --height 23  --SetPartialStrut true --transparent true --alpha 60 --tint 0x777777 --expand true
 fi
 
 
@@ -70,7 +70,7 @@ fi
 # fi
 
 
-feh --recursive --randomize --bg-fill   $(xdg-user-dir PICTURES)'/Wallpapers/'
+# feh --recursive --randomize --bg-fill   $(xdg-user-dir PICTURES)'/Wallpapers/'
 # feh --recursive  --bg-fill $(xdg-user-dir PICTURES)'/Wallpapers/background.jpg'
 
 
