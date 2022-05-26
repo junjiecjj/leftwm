@@ -106,6 +106,14 @@ key = "x"
 
 #关闭当前窗口
 [[keybind]]
+command = "Execute"
+value = "xkill"
+modifier = ["modkey", "Control"]
+key = "k"
+
+
+#关闭当前窗口
+[[keybind]]
 command = "CloseWindow"
 value = ""
 modifier = ["modkey", "Shift"]
@@ -393,6 +401,11 @@ command = "FocusNextTag"
 modifier = ["modkey"]
 key = "quoteright"
 
+#聚焦于下一个桌面tag
+[[keybind]]
+command = "FocusNextTag"
+modifier = ["modkey","Shift"]
+key = "period"
 
 
 #聚焦于上一个桌面tag
@@ -408,6 +421,14 @@ key = "h"
 command = "FocusPreviousTag"
 modifier = ["modkey"]
 key = "semicolon"
+
+
+#聚焦于上一个桌面tag
+[[keybind]]
+command = "FocusPreviousTag"
+modifier = ["modkey","Shift"]
+key = "comma"
+
 
 # Switch the desktops for each screen. Desktops [1][2] changes to [2][1]
 [[keybind]]
