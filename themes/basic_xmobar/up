@@ -59,16 +59,6 @@ exec --no-startup-id xrandr --output eDP-1 --primary
 # exec --no-startup-id xrandr --output HDM-1 --mode 1920x1080 --primary
 # exec --no-startup-id xrandr --output HDMI-2  1920*1080 --right-of HDM-1
 
-# System tray
-if [ -z "$(pgrep trayer)" ] ; then
-    trayer --edge bottom --align right --widthtype percent --width 15 --heighttype pixel --height 23  --SetPartialStrut true --transparent true --alpha 60 --tint 0x777777 --expand true
-fi
-
-
-# if [ -z "$(pgrep stalonetray)" ] ; then
-#     stalonetray  -geometry  "10x1-0+0" -bg "#777777" --icon-size 17 --transparent false --sticky true --window-layer "bottom"  &
-# fi
-
 
 # feh --recursive --randomize --bg-fill   $(xdg-user-dir PICTURES)'/Wallpapers/'
 # feh --recursive  --bg-fill $(xdg-user-dir PICTURES)'/Wallpapers/background.jpg'
@@ -179,5 +169,16 @@ if [ -z "$(pgrep  conky)" ] ; then
 else
     killall conky
 fi
+
+
+## System tray
+if [ -z "$(pgrep trayer)" ] ; then
+    trayer --edge top --align right --widthtype percent --width 14 --heighttype pixel --height 23  --SetPartialStrut true --transparent true --alpha 60 --tint 0x777777 --expand true
+fi
+
+
+# if [ -z "$(pgrep stalonetray)" ] ; then
+#     stalonetray  -geometry  "12x1-0+0" -bg "#777777" --icon-size 17 --transparent false --sticky true --window-layer "bottom"  &
+# fi
 
 

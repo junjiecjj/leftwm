@@ -3,7 +3,14 @@
 
 modkey = "Mod4"
 mousekey = "Mod4"
-workspaces = []
+# workspaces = []
+
+workspaces = [
+    { y = 0, x = 0, height = 1080, width = 1920, id = 0 },
+    # { y = 0, x = 1920, height = 1080, width = 1920, id = 1 },
+    # { y = 0, x = 3840, height = 1080, width = 1920, id = 2 },
+]
+
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:ﱘMusic", "8:Graphics", "9:♖System"]
 tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:Music", "8:Graphics", "9:System"]
 
@@ -33,6 +40,11 @@ focus_new_windows = true
 
 font="CaskaydiaCove Nerd Font Mono:style=SemiLight:pixelsize=13"
 
+border_width = 2
+margin = 10
+default_border_color = "#222222"
+floating_border_color = "#555555"
+focused_border_color = "#00FFFF"
 
 #===================== APP =========================================
 
@@ -181,13 +193,6 @@ modifier = ["modkey", "Shift"]
 key = "k"
 
 
-#将当前窗口向上移动
-[[keybind]]
-command = "MoveWindowUp"
-value = ""
-modifier = ["modkey", "Shift"]
-key = "period"
-
 #将当前窗口向下移动
 # Re-orders the focused window within the current workspace (moves down in order).
 [[keybind]]
@@ -204,13 +209,6 @@ modifier = ["modkey", "Shift"]
 key = "j"
 
 
-
-#将当前窗口向下移动
-[[keybind]]
-command = "MoveWindowDown"
-value = ""
-modifier = ["modkey", "Shift"]
-key = "comma"
 
 #移动当前窗口到Master,将当前窗口提升为主窗口,或反过来，双向命令
 [[keybind]]
