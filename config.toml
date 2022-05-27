@@ -15,7 +15,7 @@ workspaces = []
 
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:ﱘMusic", "8:Graphics", "9:♖System"]
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:Music", "8:Graphics", "9:System"]
-tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Graphics", "6:Video"]
+tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Graph", "6:Au/Video"]
 
 # layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "LeftMain", "CenterMain", "CenterMainBalanced", "CenterMainFluid", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
 
