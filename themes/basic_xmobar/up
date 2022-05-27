@@ -169,5 +169,15 @@ if [ -z "$(pgrep  xautolock)" ] ; then
      xautolock -time 5 -locker '/usr/bin/betterlockscreen -l' -corners ---- -cornersize 30 &
 fi
 
+sleep 5
+
+killall conky
+
+#  xautolock锁屏工具
+if [ -z "$(pgrep  conky)" ] ; then
+    echo  ""
+else
+    killall conky
+fi
 
 
