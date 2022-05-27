@@ -3,13 +3,15 @@
 
 modkey = "Mod4"
 mousekey = "Mod4"
-# workspaces = []
 
-workspaces = [
-    { y = 0, x = 0, height = 1080, width = 1920, id = 0 },
+
+workspaces = []
+
+# workspaces = [
+#     { y = 0, x = 0, height = 1080, width = 1920, id = 0 },
     # { y = 0, x = 1920, height = 1080, width = 1920, id = 1 },
     # { y = 0, x = 3840, height = 1080, width = 1920, id = 2 },
-]
+# ]
 
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:ﱘMusic", "8:Graphics", "9:♖System"]
 tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:Music", "8:Graphics", "9:System"]
