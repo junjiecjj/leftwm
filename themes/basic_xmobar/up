@@ -37,7 +37,7 @@ do
    let index=index+1
 done
 
-
+leftwm-command "SetMarginMultiplier 0.3"
 
 # tray icons(eDP1 is the display device's name, use the command "xrandr" to see the display device name.)
 # 其中的eDP1便是我的显示设备名称。如果你的显示设备名称不是eDP1 ，那么需要修改
