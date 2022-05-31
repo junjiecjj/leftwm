@@ -161,7 +161,7 @@ key = "e"
 command = "Execute"
 value = "slock"
 modifier = ["modkey", "Control"]
-key = "l"
+key = "s"
 
 # 锁屏
 [[keybind]]
