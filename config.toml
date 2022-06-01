@@ -203,7 +203,7 @@ key = "b"
 
 
 #==========================  在同一个桌面内移动窗口 =====================================================
-#将当前窗口向上移动
+# 逆时针移动当前窗口
 # Re-orders the focused window within the current workspace (moves up in order).
 [[keybind]]
 command = "MoveWindowUp"
@@ -211,6 +211,7 @@ value = ""
 modifier = ["modkey", "Shift"]
 key = "Up"
 
+# 逆时针移动当前窗口
 [[keybind]]
 command = "MoveWindowUp"
 value = ""
@@ -218,7 +219,7 @@ modifier = ["modkey", "Shift"]
 key = "k"
 
 
-#将当前窗口向下移动
+# 顺时针移动当前窗口
 # Re-orders the focused window within the current workspace (moves down in order).
 [[keybind]]
 command = "MoveWindowDown"
@@ -226,7 +227,7 @@ value = ""
 modifier = ["modkey", "Shift"]
 key = "Down"
 
-#将当前窗口向下移动
+# 顺时针移动当前窗口
 [[keybind]]
 command = "MoveWindowDown"
 value = ""
@@ -239,7 +240,7 @@ key = "j"
 [[keybind]]
 command = "MoveWindowTop"
 value = ""
-modifier = ["modkey", "Control"]
+modifier = ["modkey", "Shift"]
 key = "Return"
 
 
@@ -326,11 +327,11 @@ modifier = ["modkey"]
 key = "comma"
 
 # 在当前窗口和主窗口间来回切换
-#[[keybind]]
-#command = "FocusWindowTop"
-#modifier = ["modkey","Shift"]
-#value = true
-#key = "Return"
+# [[keybind]]
+# command = "FocusWindowTop"
+# modifier = ["modkey","Control"]
+# value = true
+# key = "Return"
 
 #==========================  窗口间切换 over=====================================================
 
@@ -412,6 +413,12 @@ key = "b"
 command = "ReturnToLastTag"
 modifier = ["modkey"]
 key = "b"
+
+[[keybind]]
+command = "ReturnToLastTag"
+modifier = ["modkey"]
+key = "grave"
+
 
 #聚焦于下一个桌面tag
 [[keybind]]
