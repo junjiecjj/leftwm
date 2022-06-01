@@ -44,7 +44,7 @@ focus_new_windows = true
 font="CaskaydiaCove Nerd Font Mono:style=SemiLight:pixelsize=13"
 
 border_width = 2
-margin = 10
+margin = 2
 default_border_color = "#222222"
 floating_border_color = "#555555"
 focused_border_color = "#00FFFF"
