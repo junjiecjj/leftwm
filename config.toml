@@ -265,7 +265,7 @@ key = "Up"
 command = "FocusWindowUp"
 value = ""
 modifier = ["modkey"]
-key = "w"
+key = "q"
 
 #聚焦于上一个窗口
 [[keybind]]
@@ -286,7 +286,7 @@ key = "Down"
 command = "FocusWindowDown"
 value = ""
 modifier = ["modkey"]
-key = "q"
+key = "w"
 
 #聚焦于下一个窗口
 [[keybind]]
