@@ -154,6 +154,28 @@ value = "loginctl kill-session $XDG_SESSION_ID"
 modifier = ["modkey", "Control"]
 key = "e"
 
+#  使用 pactl 来调节音量
+[[keybind]]
+command = "Execute"
+value = "pactl set-sink-volume @DEFAULT_SINK@ +8%"
+modifier = ["modkey", "Control"]
+key = "equal"
+[[keybind]]
+command = "Execute"
+value = "pactl set-sink-volume @DEFAULT_SINK@ -8%"
+modifier = ["modkey", "Control"]
+key = "minus"
+
+[[keybind]]
+command = "Execute"
+value = "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+modifier = ["modkey", "Control"]
+key = "BackSpace"
+
+
+
+
+
 
 
 # slock锁屏
