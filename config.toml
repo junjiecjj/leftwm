@@ -81,6 +81,13 @@ value = "typora"
 modifier = ["modkey","Alt"]
 key = "t"
 
+# touchpad
+[[keybind]]
+command = "Execute"
+value = "bash ~/.config/leftwm/touchpad.sh"
+modifier = ["modkey","Control"]
+key = "t"
+
 
 #
 [[keybind]]
@@ -171,8 +178,6 @@ command = "Execute"
 value = "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 modifier = ["modkey", "Control"]
 key = "BackSpace"
-
-
 
 
 
