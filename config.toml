@@ -5,13 +5,13 @@ modkey = "Mod4"
 mousekey = "Mod4"
 
 
-workspaces = []
+# workspaces = []
 
-# workspaces = [
-#     { y = 0, x = 0, height = 1080, width = 1920, id = 0 },
-    # { y = 0, x = 1920, height = 1080, width = 1920, id = 1 },
+workspaces = [
+    { y = 0, x = 0, height = 1080, width = 1920, id = 0 },
+    { y = 0, x = 1920, height = 1080, width = 1920, id = 1 },
     # { y = 0, x = 3840, height = 1080, width = 1920, id = 2 },
-# ]
+]
 
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:ﱘMusic", "8:Graphics", "9:♖System"]
 # tags = ["1:Brower", "2:Code", "3:Term", "4:File", "5:Chat", "6:Video", "7:Music", "8:Graphics", "9:System"]
@@ -346,7 +346,7 @@ key = "comma"
 
 
 
-# 将当前窗口移动到下一个显示器
+# 将当前窗口移动到下一个显示器,仍然聚焦当前显示器。
 [[keybind]]
 command = "MoveWindowToNextWorkspace"
 modifier = ["modkey", "Control"]
@@ -354,57 +354,32 @@ key = "bracketright"
 
 
 
-# 将当前窗口移动到上一个显示器
+# 将当前窗口移动到上一个显示器,仍然聚焦当前显示器。
 [[keybind]]
 command = "MoveWindowToPreviousWorkspace"
 modifier = ["modkey", "Control"]
 key = "bracketleft"
 
 
-#聚焦于下一个聚焦的口，在最近聚焦的两个窗口来回切换
-[[keybind]]
-command = "FocusWorkspaceNext"
-value = ""
-modifier = ["modkey","Shift"]
-key = "l"
 
-#聚焦于下一个聚焦的口，在最近聚焦的两个窗口来回切换
-[[keybind]]
-command = "FocusWorkspaceNext"
-value = ""
-modifier = ["modkey"]
-key = "Right"
-
-#聚焦于下一个聚焦的口，在最近聚焦的两个窗口来回切换
+# 在显示器间切换焦点，
 [[keybind]]
 command = "FocusWorkspaceNext"
 value = ""
 modifier = ["modkey"]
 key = "bracketright"
 
-#聚焦于上一个聚焦的口，在最近聚焦的两个窗口来回切换
-[[keybind]]
-command = "FocusWorkspacePrevious"
-value = ""
-modifier = ["modkey","Shift"]
-key = "h"
 
-#聚焦于上一个聚焦的口，在最近聚焦的两个窗口来回切换
+# 在显示器间切换焦点，
 [[keybind]]
 command = "FocusWorkspacePrevious"
 value = ""
 modifier = ["modkey"]
 key = "bracketleft"
 
-#聚焦于上一个聚焦的口，在最近聚焦的两个窗口来回切换
-[[keybind]]
-command = "FocusWorkspacePrevious"
-value = ""
-modifier = ["modkey"]
-key = "Left"
 
 
-# 将当前窗口在最近的桌面与当前桌面来回切换并聚焦,和i3类似
+# 将当前窗口移动到上次聚焦的桌面，并聚焦于当前桌面.
 [[keybind]]
 command = "MoveToLastWorkspace"
 value = ""
